@@ -3,14 +3,16 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Abhishek Gupta</title>
+    {% for i in data.meta_header_model_data %}
+    
+    <title>{{i.meta_header_title}}</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Abhishek Gupta, Portfolio, website, webdeveloper portfolio" name="keywords">
-    <meta content="Abhishek's portfolio website" name="description">
+    <meta content="{{i.meta_header_keyword}}" name="keywords">
+    <meta content="{{i.meta_header_description}}" name="description">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/static/img/favicon.ico">
-
+    <link rel="icon" type="image/x-icon" href="/media/{{i.meta_header_favicon}}">
+    {% endfor %}
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">

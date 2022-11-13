@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'header',
     'about',
-    'tinymce'
+    'tinymce',
+    'meta_header'
 ]
 
 MIDDLEWARE = [
