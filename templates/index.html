@@ -318,12 +318,14 @@
                 </div>
             </div> -->
             <div class="row portfolio-container">
+                {% for i in myportfolio_model_data %}
                 <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
                     <div class="position-relative overflow-hidden mb-2 port-img-shadow">
-                        <a href="#"> <img class="img-fluid rounded w-100" src="/static/img/portfolio-1.jpg" alt=""></a>
+                        <a href="#"> <img class="img-fluid rounded w-100" src="/media/{{i.myportfolio_img}}" alt=""></a>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+                {% endfor %}
+                {% comment %} <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
                     <div class="position-relative overflow-hidden mb-2 port-img-shadow">
                         <a href="#"><img class="img-fluid rounded w-100" src="/static/img/portfolio-2.jpg" alt=""></a>
                     </div>
@@ -332,7 +334,7 @@
                     <div class="position-relative overflow-hidden mb-2 port-img-shadow">
                         <a href=""> <img class="img-fluid rounded w-100" src="/static/img/portfolio-3.jpg" alt=""></a>
                     </div>
-                </div>
+                </div> {% endcomment %}
             </div>
         </div>
     </div>

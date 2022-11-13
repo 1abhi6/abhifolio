@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     'about',
     'tinymce',
     'meta_header',
-    'service'
+    'service',
+    'myportfolio'
 ]
 
 MIDDLEWARE = [
