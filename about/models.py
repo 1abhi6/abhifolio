@@ -11,4 +11,5 @@ class about_model(models.Model):
     about_freelance = models.CharField(max_length=50)
     about_image = models.ImageField(
         upload_to="about_image", null=True, max_length=500, default=None)
-    about_image_alt_text = models.CharField(max_length=200,default="Abhishek Gupta")
+    about_image_alt_text = models.CharField(
+        max_length=200, default="Abhishek Gupta")

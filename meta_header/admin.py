@@ -5,7 +5,7 @@ from meta_header.models import meta_header_model
 
 
 class meta_header_admin(admin.ModelAdmin):
-    display_items = ['meta_header_title', 'meta_header_keyword',
+    list_display = ['meta_header_title', 'meta_header_keyword',
                      'meta_header_description', 'meta_header_favicon']
 
 

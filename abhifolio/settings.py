@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'header',
     'about',
     'tinymce',
-    'meta_header'
+    'meta_header',
+    'service'
 ]
 
 MIDDLEWARE = [
