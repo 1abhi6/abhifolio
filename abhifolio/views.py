@@ -1,5 +1,8 @@
 from django.shortcuts import render
-
+from header.models import header_model
 # Home page
+
+
 def home(request):
-    return render(request,'index.html')
+    header_model_data = header_model.objects.all()
+    return render(request, 'index.html', {'header_model_data': header_model_data})

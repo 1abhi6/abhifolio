@@ -43,9 +43,9 @@
             <div class="row align-items-center">
 
                 <div class="col-lg-7 text-center text-lg-left">
-                    <h3 class="text-white font-weight-normal mb-3">Hello, my name</h3>
+                    <h3 class="text-white font-weight-normal mb-3">{{header_model_data.salutation_text}}</h3>
                     <h1 class="display-3 text-uppercase text-primary mb-2" style="-webkit-text-stroke: 4px #ffffff;">
-                        Abhishek Gupta</h1>
+                        {{salutation_text.my_name}}</h1>
                     <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
                     <div class="typed-text d-none">Web Developer, Python Developer, Wordpress Web Developer</div>
                     <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
@@ -55,7 +55,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 px-8 pl-lg-0 pb-5 pb-lg-4 about-img">
-                    <img class="img-fluid w-100 rounded-circle shadow-sm" src="/static/img/professImg.png" alt="Abhishek Gupta">
+                    <img class="img-fluid w-100 rounded-circle shadow-sm" src="/static/img/professImg.png" alt="{{header_model_data.my_image_alt_text}}">
                 </div>
             </div>
         </div>
