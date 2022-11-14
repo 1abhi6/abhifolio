@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     'tinymce',
     'meta_header',
     'service',
-    'myportfolio'
+    'myportfolio',
+    'skill'
 ]
 
 MIDDLEWARE = [
