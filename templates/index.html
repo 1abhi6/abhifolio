@@ -20,7 +20,7 @@
                 <a href="#service" class="nav-item nav-link nav-hidden">Service</a>
                 <span class="nav-item nav-link nav-hidden">|</span>
                 <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
-                <a href="#contact" class="nav-item nav-link">Contact</a>
+                <a href="/contact" class="nav-item nav-link">Contact</a>
             </div>
             <div class="d-flex justify-content-center">
                 <a class="btn btn-light btn-social mr-2" href="https://www.linkedin.com/in/codeabhi/" target="_blank"><i
@@ -448,3 +448,10 @@
     <!-- Contact End -->
 
     {% endblock mainContent %}
+
+    {% block back_to_top_and_scroll_to_bottom %}
+
+    <a href="#about"><i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i></a>
+    <a href="#" class="btn btn-outline-dark px-0 back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+    {% endblock back_to_top_and_scroll_to_bottom %}

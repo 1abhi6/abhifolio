@@ -23,3 +23,7 @@ def home(request):
         'skill_model_data': skill_model_data
     }
     return render(request, 'index.html', data)
+
+
+def contact(request):
+    return render(request, 'contact.html')

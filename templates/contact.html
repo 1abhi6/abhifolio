@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block mainContent %}
+
+<div class="container-fluid py-5" id="contact" style="min-width:100vw; min-height:75vh">
+    <div class="container">
+        <div class="position-relative d-flex align-items-center justify-content-center">
+            <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Contact</h1>
+            <h1 class="position-absolute text-uppercase text-primary">Contact Me</h1>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="contact-form text-center">
+                    <form name="sentMessage" id="contactForm">
+                        <div class="form-row">
+                            <div class="control-group col-sm-6">
+                                <input type="text" class="form-control p-4" id="name" placeholder="Your Name"
+                                    required="required">
+                            </div>
+                            <div class="control-group col-sm-6">
+                                <input type="email" class="form-control p-4" id="email" placeholder="Your Email"
+                                    required="required">
+                            </div>
+                        </div>
+                        <div class="control-group mt-3">
+                            <input type="text" class="form-control p-4" id="subject" placeholder="Subject"
+                                required="required" />
+                        </div>
+                        <div class="control-group mt-3">
+                            <textarea class="form-control py-3 px-4" rows="5" id="message" placeholder="Message"
+                                required="required"></textarea>
+                        </div>
+                        <div class="mt-3">
+                            <button class="btn btn-outline-primary" type="submit" id="sendMessageButton">Send
+                                Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock mainContent %}
