@@ -7,8 +7,11 @@ from myportfolio.models import myportfolio_model
 from skill.models import skill_model
 from contact.models import contact_model
 from django.core.mail import send_mail, EmailMultiAlternatives
-# Home page
+from education.models import education_model
+from myprojects.models import myprojects_model
 
+
+# Home page
 
 def home(request):
     header_model_data = header_model.objects.all()[:1]
@@ -16,6 +19,8 @@ def home(request):
     service_model_data = service_model.objects.all()
     myportfolio_model_data = myportfolio_model.objects.all()
     skill_model_data = skill_model.objects.all()
+    education_model_data = education_model.objects.all()
+    myprojects_model_data = myprojects_model.objects.all()
 
     # Contact
     submitted = False
@@ -34,6 +39,8 @@ def home(request):
         'service_model_data': service_model_data,
         'myportfolio_model_data': myportfolio_model_data,
         'skill_model_data': skill_model_data,
+        'education_model_data': education_model_data,
+        'myprojects_model_data': myprojects_model_data,
         'submitted': submitted
     }
     return render(request, 'index.html', data)

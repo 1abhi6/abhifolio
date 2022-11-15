@@ -215,54 +215,37 @@
                 <div class="col-lg-6">
                     <h3 class="mb-4">My Education</h3>
                     <div class="border-left border-primary pt-2 pl-4 ml-2">
+
+                        {% for i in education_model_data %}
+                        
                         <div class="position-relative ex-me mb-4">
                             <i class="far fa-dot-circle text-primary position-absolute"
                                 style="top: 2px; left: -35px; font-size: 22px;"></i>
-                            <h5 class="font-weight-bold mb-1">Bachelor of Science</h5>
-                            <p class="mb-2"><strong>University of Mumbai</strong> | <small>2021 - Now</small></p>
-                            <p>Currently, I am persuing Bachelor of Science in Information Technology from University of
-                                Mumbai.</p>
+                            <h5 class="font-weight-bold mb-1">{{i.education_course_title}}</h5>
+                            <p class="mb-2"><strong>{{i.education_course_college}}</strong> | <small>{{i.education_course_year}}</small></p>
+                            <p>{{i.education_course_desc}}</p>
                         </div>
-                        <div class="position-relative ex-me mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute"
-                                style="top: 2px; left: -35px;  font-size: 22px;"></i>
-                            <h5 class="font-weight-bold mb-1">HSC</h5>
-                            <p class="mb-2"><strong>Thakur College of Science and Commerce</strong> | <small>2018-2019</small></p>
-                            <p>I have completed my HSC from the Thakur College of Science and Commerce, Mumbai from Science stream with 80% of marks.</p>
-                        </div>
-                        <div class="position-relative ex-me mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute"
-                                style="top: 2px; left: -35px;  font-size: 22px;"></i>
-                            <h5 class="font-weight-bold mb-1">SSC</h5>
-                            <p class="mb-2"><strong>St. Joseph English School</strong> | <small>2017-2018</small></p>
-                            <p>I have completed my SSC from St. Joseph English School, Mumbai with 80% of marks</p>
-                        </div>
+
+                        {% endfor %}
+
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <h3 class="mb-4">My Projects</h3>
                     <div class="border-left border-primary pt-2 pl-4 ml-2">
+
+                        {% for i in myprojects_model_data %}
+
                         <div class="position-relative ex-me mb-4">
                             <i class="far fa-dot-circle text-primary position-absolute"
                                 style="top: 2px;left: -35px;  font-size: 22px;"></i>
-                            <h5 class="font-weight-bold mb-1"><a href="https://github.com/1abhi6/unison-django" target="_blank">Unison</a></h5>
-                            <p class="mb-2"><strong>Website</strong> | <small> JavaScript, Django</small></p>
-                            <p>Unison is a blog website, based on JavaScript and Django. It is awesome project for the application of programming </p>
+                            <h5 class="font-weight-bold mb-1"><a href="{{i.myprojects_link}}" target="_blank">{{i.myprojects_title}}</a></h5>
+                            <p class="mb-2"><strong>{{i.myprojects_type}}</strong> | <small> {{i.myprojects_lang}}</small></p>
+                            <p>{{i.myprojects_desc}}</p>
                         </div>
-                        <div class="position-relative ex-me mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute"
-                                style="top: 2px;left: -35px;  font-size: 22px;"></i>
-                            <h5 class="font-weight-bold mb-1"><a href="https://github.com/1abhi6/bulkmail" target="_blank">Bulk mail Shooter</a></h5>
-                            <p class="mb-2"><strong>Software</strong> | <small>Python</small></p>
-                            <p>GUI based project, to send bulk emails on single click. This code will read data from an excel file and read the message from a HTML file and then sends the mail. Great project to practice Python </p>
-                        </div>
-                        <div class="position-relative ex-me mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute"
-                                style="top: 2px;left: -35px;  font-size: 22px;"></i>
-                            <h5 class="font-weight-bold mb-1"><a href="https://github.com/1abhi6/Alpha-Dictionary" target="_blank">Alpha Dictionary</a></h5>
-                            <p class="mb-2"><strong>Website, Mobile Application & Chrome extension</strong> | <small>JavaScript</small></p>
-                            <p>Alpha Dictionary is a project based on JavaScript API, it has Webiste, Mobile application and Google Chrome extension.</p>
-                        </div>
+
+                        {% endfor %}
+
                     </div>
                 </div>
             </div>

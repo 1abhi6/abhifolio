@@ -4,7 +4,7 @@ from education.models import education_model
 
 
 class education_admin(admin.ModelAdmin):
-    list_display = ['education_course_title', 'education_course_collge',
+    list_display = ['education_course_title', 'education_course_college',
                     'education_course_year', 'education_course_desc']
 
 
