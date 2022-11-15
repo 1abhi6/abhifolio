@@ -4,7 +4,8 @@ from myportfolio.models import myportfolio_model
 
 
 class myportfolio_admin(admin.ModelAdmin):
-    list_display = ['myportfolio_img','myportfolio_img_alt_text','myportfolio_number']
+    list_display = ['myportfolio_img_link', 'myportfolio_img',
+                    'myportfolio_img_alt_text']
 
 
 admin.site.register(myportfolio_model, myportfolio_admin)
