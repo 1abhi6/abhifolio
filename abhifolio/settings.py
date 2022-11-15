@@ -143,5 +143,5 @@ MEDIA_URL = "/media/"
 # EMAIL_HOST = "smtp.google.com"
 # EMAIL_PORT = 587
 # EMAIL_HOST_USER = "1abhigup6@gmail.com"
-# EMAIL_HOST_PASSWORD = "ydbnvfpuzjmesapo"
+# EMAIL_HOST_PASSWORD = ""
 # EMAIL_USE_TLS = True
