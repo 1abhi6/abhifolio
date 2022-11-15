@@ -408,6 +408,12 @@
                     <div class="contact-form text-center">
                         <form name="sentMessage" id="contactForm" method="POST">
                             {% csrf_token %}
+                            {% if submitted %}
+                                <script>
+                                  alert("Form Submitted");           
+                                </script>
+                            {% else %}
+                            {% endif %}
                             <div class="form-row">
                                 <div class="control-group col-sm-6">
                                     <input type="text" class="form-control p-4" id="name" name="name"placeholder="Your Name"
