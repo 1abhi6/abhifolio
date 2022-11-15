@@ -43,7 +43,8 @@ INSTALLED_APPS = [
     'meta_header',
     'service',
     'myportfolio',
-    'skill'
+    'skill',
+    'contact'
 ]
 
 MIDDLEWARE = [
@@ -61,7 +62,7 @@ ROOT_URLCONF = 'abhifolio.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR,"templates"],
+        'DIRS': [BASE_DIR, "templates"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -129,7 +130,7 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# Linking Static file 
+# Linking Static file
 STATICFILES_DIRS = [
     BASE_DIR, "static"
 ]
@@ -137,3 +138,10 @@ STATICFILES_DIRS = [
 MEDIA_ROOT = BASE_DIR/"media"
 MEDIA_URL = "/media/"
 
+# Configuring the SMTP mail sevrer for sending mail
+
+# EMAIL_HOST = "smtp.google.com"
+# EMAIL_PORT = 587
+# EMAIL_HOST_USER = "1abhigup6@gmail.com"
+# EMAIL_HOST_PASSWORD = "ydbnvfpuzjmesapo"
+# EMAIL_USE_TLS = True
