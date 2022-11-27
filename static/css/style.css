@@ -25,6 +25,10 @@ body {
   overflow-x: hidden;
 }
 
+.bg-primary {
+  background-color: rgb(0 123 255 / 90%) !important;
+}
+
 /* .mail-anchor{
   color:#6c757d !important;
   text-decoration: none;
@@ -148,6 +152,7 @@ p {
     font-weight: 300;
     line-height: 1.2;
   }
+
   .display-1 {
     font-size: 85px;
     font-weight: 1000;
@@ -166,6 +171,7 @@ p {
   #email {
     margin-top: 1rem;
   }
+
   .service-box {
     margin-left: 0px !important;
   }
