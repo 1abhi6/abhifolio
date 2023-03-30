@@ -33,7 +33,7 @@ This website was created using the following technologies:
 - HTML
 - CSS
 - Bootstrap
-- PostgreSQL
+- SQLite
 
 ## Contributing
 
