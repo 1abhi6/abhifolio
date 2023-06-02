@@ -1,6 +1,6 @@
 # Portfolio Website using Django
 
-This is my portfolio website created using Django. The website showcases my projects, skills, and experience as a web developer. I learned a lot from this project 
+This is my portfolio website created using Django. The website showcases my projects, skills, and experience as a web developer. I learned a lot from this project.
 
 ## Installation
 
