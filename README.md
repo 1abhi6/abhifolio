@@ -45,7 +45,7 @@ This project is licensed under the MIT License. See the `LICENSE` file for more 
 
 ## Contact
 
-If you have any questions or feedback about this project, you can contact me at [abhi@getifyme.com]. Thank you for visiting my portfolio website!
+If you have any questions or feedback about this project, you can contact me at abhi@getifyme.com. Thank you for visiting my portfolio website!
 
 
 # Demo
