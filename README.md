@@ -35,14 +35,6 @@ This website was created using the following technologies:
 - Bootstrap
 - SQLite
 
-## Contributing
-
-If you would like to contribute to this project, feel free to submit a pull request. Any contributions are greatly appreciated!
-
-## License
-
-This project is licensed under the MIT License. See the `LICENSE` file for more details.
-
 ## Contact
 
 If you have any questions or feedback about this project, you can contact me at abhi@getifyme.com. Thank you for visiting my portfolio website!
